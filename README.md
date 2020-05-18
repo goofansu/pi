@@ -4,8 +4,8 @@ Stream photos from the camera module of Raspberry Pi 4 based on [Nerves Project]
 
 ## Requirements
 
-[Raspberry Pi 4B](https://www.raspberrypi.org/products/raspberry-pi-4-model-b/)
-[Camera Module V2](https://www.raspberrypi.org/products/camera-module-v2/)
+- [Raspberry Pi 4B](https://www.raspberrypi.org/products/raspberry-pi-4-model-b/)
+- [Camera Module V2](https://www.raspberrypi.org/products/camera-module-v2/)
 
 
 ## Burn
