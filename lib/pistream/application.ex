@@ -33,6 +33,8 @@ defmodule Pistream.Application do
       # Children for all targets except host
       # Starts a worker by calling: Pistream.Worker.start_link(arg)
       # {Pistream.Worker, arg},
+      {Picam.Camera, []},
+      {Plug.Cowboy, scheme: :http, plug: Pistream.Router, port: 4040}
     ]
   end
 

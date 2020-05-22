@@ -31,7 +31,7 @@ defmodule Pistream.MixProject do
   def application do
     [
       mod: {Pistream.Application, []},
-      extra_applications: [:logger, :runtime_tools]
+      extra_applications: [:logger, :runtime_tools, :inets]
     ]
   end
 
@@ -50,6 +50,10 @@ defmodule Pistream.MixProject do
 
       # Dependencies for specific targets
       {:nerves_system_rpi4, "~> 1.11", runtime: false, targets: :rpi4},
+
+      # Playground
+      {:picam, "~> 0.4.0"},
+      {:plug_cowboy, "~> 2.0"},
     ]
   end
 
