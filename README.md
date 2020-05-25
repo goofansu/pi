@@ -3,7 +3,7 @@
 Raspberry Pi playground based on [Nerves Project](https://www.nerves-project.org).
 
 ## Projects
-See [Wiki](https://github.com/goofansu/pi/wiki)
+See [Wiki](https://github.com/goofansu/pi/wiki#projects).
 
 ## Requirements
 
