@@ -2,6 +2,9 @@
 
 Raspberry Pi playground based on [Nerves Project](https://www.nerves-project.org).
 
+## Projects
+See [Wiki](./wiki)
+
 ## Requirements
 
 - [Raspberry Pi 4B](https://www.raspberrypi.org/products/raspberry-pi-4-model-b/)
