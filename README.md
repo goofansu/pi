@@ -1,6 +1,6 @@
 # Pi
 
-Stream photos from the camera module of Raspberry Pi 4 based on [Nerves Project](https://www.nerves-project.org).
+Raspberry Pi playground based on [Nerves Project](https://www.nerves-project.org).
 
 ## Requirements
 
