@@ -5,7 +5,7 @@
 # is restricted to this project.
 import Config
 
-config :pistream, target: Mix.target()
+config :pi, target: Mix.target()
 
 # Customize non-Elixir parts of the firmware. See
 # https://hexdocs.pm/nerves/advanced-configuration.html for details.

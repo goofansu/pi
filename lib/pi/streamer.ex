@@ -1,4 +1,4 @@
-defmodule Pistream.Streamer do
+defmodule Pi.Streamer do
   @moduledoc """
   Plug for streaming an image
   """
@@ -27,13 +27,14 @@ defmodule Pistream.Streamer do
   defp send_picture(conn) do
     Picam.set_img_effect(:sketch)
 
-    jpg = Picam.next_frame
+    jpg = Picam.next_frame()
     size = byte_size(jpg)
     header = "------#{@boundary}\r\nContent-Type: image/jpeg\r\nContent-length: #{size}\r\n\r\n"
     footer = "\r\n"
+
     with {:ok, conn} <- chunk(conn, header),
          {:ok, conn} <- chunk(conn, jpg),
          {:ok, conn} <- chunk(conn, footer),
-      do: conn
+         do: conn
   end
 end

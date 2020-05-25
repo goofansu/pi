@@ -1,7 +1,7 @@
-defmodule Pistream.MixProject do
+defmodule Pi.MixProject do
   use Mix.Project
 
-  @app :pistream
+  @app :pi
   @version "0.1.0"
   @all_targets [:rpi4]
 
@@ -30,7 +30,7 @@ defmodule Pistream.MixProject do
   # Run "mix help compile.app" to learn about applications.
   def application do
     [
-      mod: {Pistream.Application, []},
+      mod: {Pi.Application, []},
       extra_applications: [:logger, :runtime_tools, :inets]
     ]
   end
@@ -53,7 +53,7 @@ defmodule Pistream.MixProject do
 
       # Playground
       {:picam, "~> 0.4.0"},
-      {:plug_cowboy, "~> 2.0"},
+      {:plug_cowboy, "~> 2.0"}
     ]
   end
 

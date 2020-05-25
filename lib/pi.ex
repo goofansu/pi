@@ -1,6 +1,6 @@
-defmodule Pistream do
+defmodule Pi do
   @moduledoc """
-  Documentation for Pistream.
+  Documentation for Pi.
   """
 
   @doc """
@@ -8,7 +8,7 @@ defmodule Pistream do
 
   ## Examples
 
-      iex> Pistream.hello
+      iex> Pi.hello
       :world
 
   """
