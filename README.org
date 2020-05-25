@@ -1,0 +1,31 @@
+* Pi
+
+Raspberry Pi playground based on [[https://www.nerves-project.org][Nerves Project]].
+
+** Projects
+See [[https://github.com/goofansu/pi/wiki#projects][Wiki]].
+
+** Requirements
+
+- [[https://www.raspberrypi.org/products/raspberry-pi-4-model-b/][Raspberry Pi 4B]]
+- [[https://www.raspberrypi.org/products/camera-module-v2/][Camera Module V2]]
+
+** Develop at host
+
+#+BEGIN_SRC shell
+mix deps.get
+mix compile
+#+END_SRC
+
+** Deploy to target
+
+#+BEGIN_SRC shell
+export MIX_TARGET=rpi4
+
+# first time deploy
+mix firmware.burn
+
+# use script to deploy
+mix firmware.gen.script
+mix firmware && ./upload.sh
+#+END_SRC
