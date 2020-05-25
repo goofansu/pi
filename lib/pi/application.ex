@@ -15,6 +15,7 @@ defmodule Pi.Application do
         # Children for all targets
         # Starts a worker by calling: Pi.Worker.start_link(arg)
         # {Pi.Worker, arg},
+        {Plug.Cowboy, scheme: :http, plug: Pi.Router, port: 4040}
       ] ++ children(target())
 
     Supervisor.start_link(children, opts)
@@ -26,6 +27,7 @@ defmodule Pi.Application do
       # Children that only run on the host
       # Starts a worker by calling: Pi.Worker.start_link(arg)
       # {Pi.Worker, arg},
+      {Picam.FakeCamera, []}
     ]
   end
 
@@ -34,8 +36,7 @@ defmodule Pi.Application do
       # Children for all targets except host
       # Starts a worker by calling: Pi.Worker.start_link(arg)
       # {Pi.Worker, arg},
-      {Picam.Camera, []},
-      {Plug.Cowboy, scheme: :http, plug: Pi.Router, port: 4040}
+      {Picam.Camera, []}
     ]
   end
 
