@@ -4,6 +4,8 @@
 ##  The cookie needs to be configured prior to vm boot for
 ##  for read only filesystem.
 
+-name pi@nerves.local
+
 -setcookie <%= @release.options[:cookie] %>
 
 ## Use Ctrl-C to interrupt the current shell rather than invoking the emulator's
