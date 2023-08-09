@@ -3,7 +3,7 @@
 Raspberry Pi playground based on [[https://www.nerves-project.org][Nerves Project]].
 
 ** Projects
-See [[https://www.notion.so/Raspberry-Pi-playground-5c1b6559c3354b1cb698b7bb6169584a][Notion]].
+See [[https://goofansu.notion.site/Pi-Camera-streamer-5a65c867b954427f92ada1295fe5185e?pvs=4][Notion]].
 
 ** Requirements
 
